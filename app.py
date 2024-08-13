@@ -87,7 +87,7 @@ with st.sidebar:
         with st.spinner("Processing..."):
             create_embeddings(text)
         st.balloons()
-        st.success("Document/s Processed Successfully!")
+        st.success("Processed Successfully!")
 
 # Here the user enters the prompt
 if prompt1 := st.chat_input(placeholder = "Talk to me"):
