@@ -84,7 +84,8 @@ with st.sidebar:
     # At this point "text" string has everything that was in the document/s in it.
     # Press the processing button that calls create_embeddings() 
     if st.button("Process the document"):
-        create_embeddings(text)
+        with st.spinner("Processing..."):
+            create_embeddings(text)
         st.success("Processing Done!!!")
 
 
